@@ -1,0 +1,30 @@
+.services{
+    .service-block{
+        border-radius: 150px 30px 30px 30px;
+        background: $accent-3;
+        box-shadow: $shadow;
+        position: relative;
+        .image-circle{
+            padding: 26px;
+            border-radius: 5000px;
+            background: rgba(255, 255, 255, 0.30);
+            box-shadow: 0px 0px 5px 0px rgba(0, 22, 86, 0.08);
+            backdrop-filter: blur(15px);
+            display: inline-flex;
+            position: absolute;
+            left: 0;
+            top: -1%;
+        }
+        .text-block{
+            padding: 120px 26px 48px;
+        }
+        .bottom-bar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 24px;
+            border-radius: 0 0 30px 30px;
+            background: $white;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+// Hero Banner
+.hero-banner{
+   background: url('../media/banner/bg-light-2.png');
+   background-repeat: no-repeat;
+   .banner-area{
+      .banner-right-image{
+         display: flex;
+         justify-content: end;
+         position: relative;
+         padding-top: 40px;
+         @include media-query(992px){
+            padding-top: 0;
+         }
+         @include media-query(767px){
+            justify-content: center;
+            padding: 0;
+            margin: 0 40px;
+         }
+         .banner-card{
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.30);
+            box-shadow: $shadow-3;
+            backdrop-filter: blur(25px);
+            position: absolute;
+            bottom: 21.5%;
+            left: -7%;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            @include media-query(1399px){
+               left: -20%;
+            }
+            @include media-query(1199px){
+               padding: 12px;
+               border-radius: 10px;
+            }
+            @include media-query(992px){
+               padding: 18px;
+               left: 5%;
+            }
+            @include media-query(767px){
+               padding: 8px;
+               left: -10%;
+            }
+            @include media-query(421px){
+               padding: 4px;
+            }
+            &.box-2{
+               bottom: 7.5%;
+            }
+         }
+      } 
+   }
+}

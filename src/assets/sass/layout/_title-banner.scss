@@ -1,0 +1,11 @@
+// Title Banner
+.title-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.30);
+    background-repeat: no-repeat;
+    box-shadow: $shadow-3;
+}

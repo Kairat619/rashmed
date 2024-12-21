@@ -1,0 +1,48 @@
+footer{
+    .footer_area{
+
+        .links-block{
+            margin-top: 82px;
+            @include media-query(767px){
+                margin-top: 48px;
+            }
+            .our-links{
+                display: flex;
+                gap: 70px;
+                @include media-query(592px){
+                gap: 40px;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    li{
+                        .details{
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer_center_area{
+            form{
+                display: flex;
+                button{
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+    }
+    .footer_social_links{
+        padding: 16px 0;
+    }
+}
+// Footer Social Media Buttons
+.social-media-icons{
+    display: flex;
+    gap: 24px;
+}
+    

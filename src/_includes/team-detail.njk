@@ -1,0 +1,133 @@
+--- 
+title: team-detail
+layout: 'base.njk'
+---
+    <header class="header">
+      <div class="container">
+        <nav class="navbar upper d-flex">
+          <a class="navbar-brand d-lg-none" href="/">
+            <img alt="" src="/assets/media/brand-logo.png">
+          </a>
+          <a class="navbar-brand d-lg-block d-none" href="/"><img alt="" src="/assets/media/brand-logo.png"></a>
+          <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav mainmenu m-0">
+                <li class="menu-item ">
+                  <a href="/" >Басты Бет</a>
+                </li>
+                <li class="menu-item "> 
+                  <a href="/pages/about" class="active" >Біз туралы</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/services">Қызметтер</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/blogs">Блог</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/contact">Байланыс</a>
+                </li>
+              </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <i class="fal fa-bars"></i>
+            </button>
+          </nav>
+          <div class="right-content d-lg-flex d-none">
+            <a href="" class="color-primary">
+              <h6 class="fw-600 d-xl-block d-none"><i class="fal fa-phone-alt"></i> +7(705)6066-888</h6>
+            </a>
+            <ul class="unstyled">
+              <li><a href="/#appointment" class="cus-btn">
+                  <h6>Онлайн Брондау</h6>
+                </a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Header Area end -->
+    <div class="bg-wrapper-2">
+
+    <!-- Title-Banner Start -->
+    <div class="title-banner">
+        <div class="container">
+            <div class="row">
+            <h1 class="light-black">Дәрігерлер</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Title-Banner End -->
+
+    <!-- Team Section Start -->
+    <section class="team-detail p-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-8 col-lg-12">
+            <div class="row mb-48">
+              <div class="col-lg-5 col-md-5 text-md-start text-center">
+                <img src="{{ portfolio }}" alt="{{ caption }}">
+              </div>
+              <div class="col-lg-7 col-md-7">
+                <div class="team-content mt-16">
+                  <h3 class="fw-700 light-black mb-8 text-md-start text-center">{{ doctor }}</h3>
+                  <h5 class="gray mb-24 text-md-start text-center">{{ job }}</h5>
+    
+                  <p class="gray mb-24">
+                    {{ content | safe }} 
+                  </p>
+                  <div class="row">
+                    <div class="col-md-7">
+                      <div class="team-links">
+                        <h5 class="light-black">Share: </h5>
+                        <ul class="social-media-links unstyled">
+                          <li><a href=""><img src="/assets/media/icons/instagram.png" alt=""></a></li>
+                          <li><a href=""><img src="/assets/media/icons/twitter.png" alt=""></a></li>
+                          <li><a href=""><img src="/assets/media/icons/facebook.png" alt=""></a></li>
+                          <li><a href=""><img src="/assets/media/icons/linkedin.png" alt=""></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                
+              </div>
+              <div class="col-lg-6 col-md-6">
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6 mt-xl-0 mt-32">
+            <div class="contact-info">
+              <h4 class="mb-24">Contact Info</h4>
+              <div class="our-links mb-32">
+                <ul class="unstyled">
+                  <li><a href="" class="details"><img src="/assets/media/icons/mail.png" alt="">{{ email }}</a></li>
+                  <li>
+                    <p class="details"><img src="/assets/media/icons/telephone-2.png" alt="">{{ tel }}</p>
+                  </li>
+                </ul>
+              </div>
+              <h4 class="light-black mb-24">Share:</h4>
+              <ul class="social-media-links unstyled mb-32">
+                <li><a href=""><img src="/assets/media/icons/instagram.png" alt=""></a></li>
+                <li><a href=""><img src="/assets/media/icons/twitter.png" alt=""></a></li>
+                <li><a href=""><img src="/assets/media/icons/facebook.png" alt=""></a></li>
+                <li><a href=""><img src="/assets/media/icons/linkedin.png" alt=""></a></li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team Section End -->
+    </div>
+
+  </div>
+    <!-- Footer Start -->
+   

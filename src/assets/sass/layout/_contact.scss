@@ -1,0 +1,45 @@
+/* ------------ Contact us on Home Page-------------- */
+.contact-us{
+    .contact-banner{
+        background: url('../media/banner/inner-banner/inner-ban-1.png');
+        background-repeat: no-repeat;
+        height: 573px;
+        .text-area{
+            padding: 168px 48px;
+        }    
+    }
+    
+}
+
+/* ------------ Contact us on Contact Page-------------- */
+.map{
+    iframe{
+        width: 100%;
+        height: 355px;
+        border-radius: 20px;
+        box-shadow: $shadow;
+    }
+}
+.links-block{
+    .our-links{
+        
+        .address_detail{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            .list{
+                padding: 22px;
+                border-radius: 20px;
+                background: rgba(255, 255, 255, 0.30);
+                box-shadow: $shadow-3;
+                backdrop-filter: blur(25px);
+                .details{
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

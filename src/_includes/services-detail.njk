@@ -1,0 +1,256 @@
+--- 
+title: services-detail
+layout: 'base.njk'
+---
+   <header class="header">
+      <div class="container">
+        <nav class="navbar upper d-flex">
+          <a class="navbar-brand d-lg-none" href="/">
+            <img alt="" src="/assets/media/brand-logo.png">
+          </a>
+          <a class="navbar-brand d-lg-block d-none" href="/"><img alt="" src="/assets/media/brand-logo.png"></a>
+          <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav mainmenu m-0">
+                <li class="menu-item ">
+                  <a href="/" >Басты Бет</a>
+                </li>
+                <li class="menu-item "> 
+                  <a href="/pages/about" >Біз туралы</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/services" class="active">Қызметтер</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/blogs">Блог</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/contact">Байланыс</a>
+                </li>
+              </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <i class="fal fa-bars"></i>
+            </button>
+          </nav>
+          <div class="right-content d-lg-flex d-none">
+            <a href="" class="color-primary">
+              <h6 class="fw-600 d-xl-block d-none"><i class="fal fa-phone-alt"></i> +7(705)6066-888</h6>
+            </a>
+            <ul class="unstyled">
+              <li><a href="/#appointment" class="cus-btn">
+                  <h6>Онлайн Брондау</h6>
+                </a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Header Area end -->
+    <div class="bg-wrapper-2">
+    
+        <!-- Title-Banner Start -->
+        <div class="title-banner">
+            <div class="container">
+                <div class="row">
+                    <h1 class="light-black">Қызметтер туралы</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Title-Banner End -->
+    
+        <!-- Health Consultation Area Start -->
+        <section class="health-consult p-120">
+            <div class="container">
+                <div class="row mb-48">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="content-area">
+                            <div class="title mb-16">
+                                <div class="img-circle">
+                                    <img src="{{ thumnail }}" alt="{{ alt }}">
+                                </div>
+                                <h2 class="light-black">{{ service }}</h2>
+                            </div>
+                            <p class="gray mb-24"> {{ content | safe }}  </p>
+                           
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="video-image">
+                            <img src="/assets/media/services/ser_dtl-1.png" alt="" class="service_detail_img br-30">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal" class="play-btn"><img src="/assets/media/services/play-button.png" alt="" class="video-btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6 mb-md-0 mb-24">
+                        <div class="advantages">
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-6 col-md-6">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Health Consultation Area End -->
+        <div class="bg-wrapper service-detail">
+    
+            <!-- Appointment Form Start -->
+            <section class="app-booking">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6">
+                            <img src="/assets/media/images/appointment-form.png" alt="" class="appointment-image br-30">
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="appointment-form p-24 mt-xl-0 mt-24">
+                                <h6 class="color-primary">Брондау</h6>
+                <h2 class="light-black">қабылдауға жазылу</h2>
+                <form method="post" action="/" class="form-group mt-32">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="icon-block mb-24">
+                        <label for="first-name" class="mb-4p">Есіміңіз*</label>
+                        <input type="text" class="form-control" id="first-name" name="name" required
+                          placeholder="Толық Аты-жөні">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="icon-block mb-24">
+                        <label for="no" class="mb-4p">Нөмеріңіз*</label>
+                        <input type="tel" class="form-control" id="no" name="number" required
+                          placeholder="+7 (700) 1234 567">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="icon-block mb-24">
+                        <label for="email" class="mb-4p">Email*</label>
+                        <input type="email" class="form-control" id="email" name="e-mail" required
+                          placeholder="email@example.com">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="icon-block mb-24">
+                        <label for="date" class="mb-4p">Күн*</label>
+                        <input type="datetime-local" class="form-control" id="date" name="date" required>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="icon-block mb-24">
+                        <label for="tim" class="mb-4p">Сағаты*</label>
+                        <input type="time" class="form-control" id="tim" name="time" required>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="icon-block mb-32">
+                        <label for="tim" class="mb-4p">Мазмұны</label>
+                        <textarea name="message" class="form-control" id="msg" cols="30" rows="6"
+                          placeholder="Сәлеметсіз бе!"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="cus-btn small-pad">Брондауға қою</button>
+                  <!-- Alert Message -->
+                  <div id="message" class="alert-msg"></div>
+                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Appointment Form End -->
+    
+            <!-- FAQ's Start -->
+            <section class="faq p-120">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6">
+                    <h6 class="color-primary fw-600">FAQ's</h6>
+                    <h2 class="light-black mb-32">Сұрағыңызды осында қалдырыңыз</h2>
+            <div class="faq-form">
+              <form method="post" action="/" class="form-group contact-from">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="icon-block mb-24">
+                      <label for="first_name" class="mb-4p">Есіміңіз*</label>
+                      <input type="text" class="form-control" id="first_name" name="name" required
+                        placeholder="Толық Аты-жөны">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="icon-block mb-24">
+                      <label for="e-mail" class="mb-4p">Email*</label>
+                      <input type="email" class="form-control" id="e-mail" name="email" required
+                        placeholder="email@example.com">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="icon-block mb-32">
+                      <label for="mssg" class="mb-4p">Сұрақтарыңыз</label>
+                      <textarea name="message" class="form-control" id="mssg" cols="30" rows="5"
+                        placeholder="Сәлеметсіз бе!"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="cus-btn small-pad">Сұрақты жолдау</button>
+                <!-- Alert Message -->
+                <div id="messagee" class="alert-msg"></div>
+              </form>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6">
+                    <div class="row m-0 p-md-0 p-24" id="accordionExample">
+                      <div class="faq-block border-0">
+                         <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq1"
+                  aria-expanded="true" aria-controls="faq1">Көрсетілетін қызметтерді қалай алуға болады?
+                </a>
+                <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1"
+                  data-bs-parent="#accordionExample">
+                  <p class="gray">Орталығымыздың хабарласу нөмері: 8778-4611-888 не қоңырау шалып, қажетті қызметті аласыз. Сондай-ақ, https://rashmed.kz/ сайтымызға кіріп, онлайын бурандауға мүмкіндігіңіз бар.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-block">
+                <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2"
+                  aria-expanded="true" aria-controls="faq2"> Емделу басқышында нелерге көіл бөлу керек?
+                </a>
+                <div id="faq2" class="accordion-collapse collapse " aria-labelledby="faq2"
+                  data-bs-parent="#accordionExample">
+                  <p class="gray">Көрсетілетін қызметтердің ерекшеліктеріне қарай, емдеуші дәрігердің нұсқауларына сай емделу басқышындағы көіңл бөлуге тиісті азықтану, демалыс және жұмыс істеу т.б жақтарды қадағалап отыру керек.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-block">
+                <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3"
+                  aria-expanded="true" aria-controls="faq3">Қызметтерге төленетін ақы аударымдары туралы?
+                </a>
+                <div id="faq3" class="accordion-collapse collapse " aria-labelledby="faq3"
+                  data-bs-parent="#accordionExample">
+                  <p class="gray">Қолма-қол төлемнен сырт, банк қосымшалары арқылы аударылым жасауға болады.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="faq-block">
+                <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq7"
+                  aria-expanded="true" aria-controls="faq7">Қалай алдын-ала Брондауға болады?
+                </a>
+                <div id="faq7" class="accordion-collapse collapse " aria-labelledby="faq7"
+                  data-bs-parent="#accordionExample">
+                  <p class="gray">"Сатып алу" түймесін басу арқылы Medicare-ді сатып алыңыз және платформаның ең керемет клиника тақырыбын алыңыз! Тақырыпты қазір алыңыз. </p>
+                </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- FAQ's End -->
+    
+        </div>
+    </div>
+
+  </div>
+    <!-- Footer Start -->

@@ -1,0 +1,76 @@
+// Appointment Table
+.app-table{
+    background: url('../media/backgrounds/time-table- banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &.v-2{
+        background: transparent;        
+    }
+    .time-table{
+        background: rgba(255, 255, 255, 0.30);
+        box-shadow: 0px 0px 5px 0px rgba(0, 22, 86, 0.08);
+        backdrop-filter: blur(50px);
+        padding: 48px 24px;
+        &.v-2{
+            padding: 24px;
+            border-radius: 30px;
+        }
+        table{
+            padding: 0;
+            border-bottom-width: 0;
+            tbody{
+                tr{
+                    :nth-child(1){
+                        text-align: left;
+                        border-top: 0;
+                    }
+                    :nth-child(2){
+                        text-align: center;
+                    }
+                    :nth-child(3){
+                        text-align: right;
+                    }
+                    td{
+                        padding: 0px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+// Appointment Form
+.app-booking{
+    .appointment-image{
+        height: 100%;
+        object-fit: cover;
+    }
+    .appointment-form{
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.30);
+        box-shadow: $shadow-2;
+        backdrop-filter: blur(50px);
+    } 
+    &.v-2{
+        background: url('../media/backgrounds/blue-background-3.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+}
+
+
+.appointment-table{
+    thead{
+        border-color: transparent;
+    }
+    tbody{
+        tr{
+            &:last-child{
+                border-color: transparent;
+            }
+        }
+
+    }
+}

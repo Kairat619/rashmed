@@ -1,0 +1,123 @@
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 12px;
+    display: block;
+    width: 120px;
+    height: 120px;
+    font-size: 100px;
+    padding: 11px 0;
+    background: $accent-1;
+    color: $white;
+    text-align: center;
+    opacity: 0;
+    text-decoration: none;
+    border-radius: 100px;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    transform: scale(0.3);
+    z-index: 999;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    &:hover{
+        background: $accent-1;
+        color: $white;       
+    }
+    &.show {
+        opacity: 1;
+    }
+    @include media-query(767px) {
+        right: -20px;
+        bottom: 40px;
+    }
+}
+
+.cus-btn{
+    font-family: $font-primary;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+    width: fit-content;
+    transition: $transition;
+    padding: 16px 24px;
+    background-color: $accent-1;
+    color: $white;
+    border: 1px solid $accent-1;
+    border-radius: 10px;
+    
+    @include media-query(492px) {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+    &:hover {
+        background-color: transparent;
+        color: $accent-1;
+        border: 1px solid $accent-1;
+        transition: $transition;
+    }
+    // For Transparent Button
+    &.active{
+        background-color: transparent;
+        color: $accent-1;
+        border: 1px solid $accent-1;
+        
+        &:hover{
+            background-color: $accent-1;
+            color: $white;
+            transition: $transition;
+        }
+    }
+    &.small-pad-2{
+        padding: 16px 32px;
+        @include media-query(992px){
+            padding: 12px 22px;
+        }
+    }
+    &.small-pad{
+        padding: 8px 16px;
+    }
+    
+}
+// Without Background Color and Padding
+.cus-btn-2{
+    background: transparent;
+    color: $accent-1;
+    font-family: $font-primary;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+    width: fit-content;
+    transition: $transition;
+    // padding: 16px 32px;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 4px;
+    i{
+        font-size: 16px;
+    }
+    &:hover{
+        color: $accent-2;
+    }
+}    
+    
+// Newsletter Button
+.newsletter-btn{
+    font-family: $font-primary;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+    width: fit-content;
+    transition: $transition;
+    background-color: $accent-1;
+    color: $white;
+    border: 1px solid $accent-1;
+    border-radius: 10px;
+    padding: 12px 24px;
+   
+}

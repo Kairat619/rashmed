@@ -1,0 +1,202 @@
+--- 
+title: contact
+layout: 'base.njk'
+---
+    <header class="header">
+      <div class="container">
+        <nav class="navbar upper d-flex">
+          <a class="navbar-brand d-lg-none" href="/">
+            <img alt="" src="/assets/media/brand-logo.png">
+          </a>
+          <a class="navbar-brand d-lg-block d-none" href="/"><img alt="" src="/assets/media/brand-logo.png"></a>
+          <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav mainmenu m-0">
+                <li class="menu-item ">
+                  <a href="/" >Басты Бет</a>
+                </li>
+                <li class="menu-item "> 
+                  <a href="/pages/about" >Біз туралы</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/services" class="active">Қызметтер</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/blogs">Блог</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/contact">Байланыс</a>
+                </li>
+              </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <i class="fal fa-bars"></i>
+            </button>
+          </nav>
+          <div class="right-content d-lg-flex d-none">
+            <a href="" class="color-primary">
+              <h6 class="fw-600 d-xl-block d-none"><i class="fal fa-phone-alt"></i> +7(705)6066-888</h6>
+            </a>
+            <ul class="unstyled">
+              <li><a href="/#appointment" class="cus-btn">
+                  <h6>Онлайн Брондау</h6>
+                </a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="bg-wrapper-2">
+
+       <div class="title-banner mb-24">
+        <div class="container">
+            <div class="row">
+            <h1 class="light-black">Қызметтер</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Title-Banner End -->
+
+    <!-- Services Section Start -->
+    <section class="services p-120">
+        <div class="container">
+          <div class="row">
+{%- for work in collections.work  -%}
+           {% if loop.index0 < 4 %}
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <div class="service-block mb-32">
+                <div class="image-circle">
+                  <img src="{{ work.data.thumnail }}" alt="{{ work.data.alt }}">
+                </div>
+                <div class="text-block">
+                 <h4 class="light-black mb-16">{{ work.data.service }}</h4>
+                <p class="gray">{{ work.data.excerpt }} </p>
+              </div>
+              <div class="bottom-bar">
+                <a href="{{ work.url }}" class="cus-btn small-pad-2" target="_blank">Қызметті алу</a>
+                <a href="{{ work.url }}" class="color-primary" target="_blank">
+                  <h6 class="fw-600">Көбірек... <i class="fal fa-chevron-right"></i></h6>
+                </a>
+              </div>
+            </div>
+          </div>
+           {%- endif %}
+                 {%- endfor %}
+          
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <div class="service-block mb-32">
+                <div class="image-circle">
+                  <img src="/assets/media/services/service-5.png" alt="">
+                </div>
+                <div class="text-block">
+                  <h4 class="light-black mb-16">Coming soon</h4>
+                  <p class="gray">Lorem ipsum dolor sit amet consect etur. Vestibulum elit eu vulputate tristique enim.
+                  </p>
+                </div>
+                <div class="bottom-bar">
+                  <a href="#" class="cus-btn small-pad-2">Қызметті алу</a>
+                <a href="#" class="color-primary">
+                  <h6 class="fw-600">Көбірек... <i class="fal fa-chevron-right"></i></h6>
+                </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <div class="service-block mb-32">
+                <div class="image-circle">
+                  <img src="/assets/media/services/service-6.png" alt="">
+                </div>
+                <div class="text-block">
+                  <h4 class="light-black mb-16">Coming soon</h4>
+                  <p class="gray">Lorem ipsum dolor sit amet consect etur. Vestibulum elit eu vulputate tristique enim.
+                  </p>
+                </div>
+                <div class="bottom-bar">
+                <a href="#" class="cus-btn small-pad-2">Қызметті алу</a>
+                <a href="#" class="color-primary">
+                  <h6 class="fw-600">Көбірек... <i class="fal fa-chevron-right"></i></h6>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+    </div>
+
+    <!-- Appointment Table Start -->
+    <section class="app-table">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-8">
+              <!--Table-->
+              <div class="time-table">
+                <h6 class="color-primary fw-600 mb-8">Жұмыс сағаты</h6>
+              <h3 class="fw-700">Жұмыс уақыты бойынша Брондау</h3>
+                <div class="table-responsive">
+                  <!--Table-->
+                <table class="table appointment-table">
+                  <!--Table head-->
+                  <thead>
+                    <tr>
+                      <th class="th-sm"></th>
+                      <th class="th-sm"></th>
+                      <th class="th-sm"></th>
+                    </tr>
+                  </thead>
+                  <!--Table head-->
+                  <!--Table body-->
+                  <tbody>
+                    <tr>
+                      <td><span class="ptb-24 fw-600">Дүйсенбі</span></td>
+                      <td class="fw-600"><span class="ptb-24"> 7AM - 11PM</span></td>
+                      <td><a href="/#appointment" class="color-primary fw-600 ptb-24">Брондау</a></td>
+                    </tr>
+                    <tr>
+                      <td><span class="ptb-24 fw-600">Сейсенбі</span></td>
+                      <td class="fw-600"><span class="ptb-24"> 7AM - 11PM</span></td>
+                      <td><a href="/#appointment" class="color-primary fw-600 ptb-24">Брондау</a></td>
+                    </tr>
+                    <tr>
+                      <td><span class="ptb-24 fw-600">Сәрсенбі</span></td>
+                      <td class="fw-600"><span class="ptb-24"> 7AM - 11PM</span></td>
+                      <td><a href="/#appointment" class="color-primary fw-600 ptb-24">Брондау</a></td>
+                    </tr>
+                    <tr>
+                      <td><span class="ptb-24 fw-600">Бейсенбі</span></td>
+                      <td class="fw-600"><span class="ptb-24"> 7AM - 11PM</span></td>
+                      <td><a href="/#appointment" class="color-primary fw-600 ptb-24">Брондау</a></td>
+                    </tr>
+                    <tr>
+                      <td><span class="ptb-24 fw-600">Жұма</span></td>
+                      <td class="fw-600"><span class="ptb-24"> 7AM - 11PM</span></td>
+                      <td><a href="/#appointment" class="color-primary fw-600 ptb-24">Брондау</a></td>
+                    </tr>
+                    <tr>
+                      <td><span class="ptb-24 fw-600">Сенбі</span></td>
+                      <td class="fw-600"><span class="ptb-24"> 7AM - 11PM</span></td>
+                      <td><a href="/#appointment" class="color-primary fw-600 ptb-24">Брондау</a></td>
+                    </tr>
+                    <tr>
+                      <td><span class="ptb-24 fw-600">Жексенбі</span></td>
+                      <td class="fw-600"><span class="ptb-24"> 7AM - 11PM</span></td>
+                      <td><a href="/#appointment" class="color-primary fw-600 ptb-24">Брондау</a></td>
+                    </tr>
+
+                  </tbody>
+                  <!--Table body-->
+                </table>
+                <!--Table-->
+              </div>
+              <div class="bottom-bar d-flex justify-content-between align-items-center">
+                <h5 class="light-black">Уақыт режимі тұрақты</h5>
+                <a href="/#appointment" class="cus-btn small-pad">Онлайн Брондау</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+      <!-- Appointment Table End -->

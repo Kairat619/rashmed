@@ -1,0 +1,12 @@
+.page_404{
+    padding: 190px 0;
+    .text-box{
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.30);
+        box-shadow: $shadow-3;    
+        padding: 70px 0;
+        @include media-query(992px){
+            padding: 50px 40px;
+        }
+    }
+}

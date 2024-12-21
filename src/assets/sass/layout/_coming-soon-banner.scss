@@ -1,0 +1,46 @@
+.cs-body{
+    background: url('../media/backgrounds/blue-background-6.png');
+    background-repeat: no-repeat;
+}
+.coming-soon-page{
+    .coming-soon-cd{
+        display: flex;
+        justify-content: center;
+        ul{
+            display: flex;
+            gap: 10px;
+            li{
+                border-radius: 20px;
+                background: rgba(255, 255, 255, 0.30);
+                box-shadow: $shadow-3;
+                padding: 24px;
+                h2{
+                    color: $accent-1;
+                }
+                h6{
+                    color: $accent-1;
+                }
+            }
+        }
+    }
+    .sub_newsletter{
+        width: 600px;
+        margin: 0 auto;
+        @include media-query(768px){
+            width: 500px;
+        }
+        @include media-query(546px){
+            width: 350px;
+        }
+        @include media-query(392px){
+            width: 300px;
+        }
+        form{
+            display: flex;
+            button{
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+}

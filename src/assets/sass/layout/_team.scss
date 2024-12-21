@@ -1,0 +1,30 @@
+// ------------ Our Team ------------ //
+.team{
+    .team_card{
+        overflow: hidden;
+        .image_block{
+            position: relative;
+            transition: $transition;
+            .social-media-links{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 0;
+                right: -110%;
+                gap: 24px;
+                padding: 24px 16px;
+                border-radius: 15px;
+                background: rgba(255, 255, 255, 0.30);
+                box-shadow: $shadow-3;
+                backdrop-filter: blur(25px);
+                transition: $transition;
+            }
+        }
+        &:hover{
+            .social-media-links {
+                transition: $transition;
+                right: 8px;
+           }
+        }
+    }
+}

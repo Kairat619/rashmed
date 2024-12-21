@@ -1,0 +1,154 @@
+--- 
+title: contact
+layout: 'base.njk'
+---
+  
+     <header class="header">
+      <div class="container">
+        <nav class="navbar upper d-flex">
+          <a class="navbar-brand d-lg-none" href="/">
+            <img alt="" src="/assets/media/brand-logo.png">
+          </a>
+          <a class="navbar-brand d-lg-block d-none" href="/"><img alt="" src="/assets/media/brand-logo.png"></a>
+          <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav mainmenu m-0">
+                <li class="menu-item ">
+                  <a href="/" >Басты Бет</a>
+                </li>
+                <li class="menu-item "> 
+                  <a href="/pages/about" >Біз туралы</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/services">Қызметтер</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/blogs">Блог</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/contact" class="active">Байланыс</a>
+                </li>
+              </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <i class="fal fa-bars"></i>
+            </button>
+          </nav>
+          <div class="right-content d-lg-flex d-none">
+            <a href="" class="color-primary">
+              <h6 class="fw-600 d-xl-block d-none"><i class="fal fa-phone-alt"></i> +7(705)6066-888</h6>
+            </a>
+            <ul class="unstyled">
+              <li><a href="/#appointment" class="cus-btn">
+                  <h6>Онлайн Брондау</h6>
+                </a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="bg-wrapper-2">
+
+      <!-- Title-Banner Start -->
+      <div class="title-banner">
+        <div class="container">
+          <div class="row">
+            <h1 class="light-black">Байланыс</h1>
+          </div>
+        </div>
+      </div>
+      <!-- Title-Banner End -->
+
+      <!-- Appointment Form Start -->
+      <section class="app-booking v-2 p-120">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 mb-lg-0 mb-32">
+              <div class="appointment-form p-24">
+                <h6 class="color-primary">Байланыс</h6>
+                <h2 class="light-black">Форманы толтырыңыз</h2>
+                <form method="post" action="/" class="form-group mt-32">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="icon-block mb-24">
+                        <label for="first-name" class="mb-4p">Есіміңіз*</label>
+                        <input type="text" class="form-control" id="first-name" name="name" required
+                          placeholder="Толық Аты-жөні">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="icon-block mb-24">
+                        <label for="no" class="mb-4p">Нөмеріңіз*</label>
+                        <input type="tel" class="form-control" id="no" name="number" required
+                          placeholder="+7 (700) 1234 567">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="icon-block mb-24">
+                        <label for="email" class="mb-4p">Email*</label>
+                        <input type="email" class="form-control" id="email" name="e-mail" required
+                          placeholder="email@example.com">
+                      </div>
+                    </div>
+                   
+                   
+                    <div class="col-sm-12">
+                      <div class="icon-block mb-32">
+                        <label for="tim" class="mb-4p">Мазмұны</label>
+                        <textarea name="message" class="form-control" id="msg" cols="30" rows="6"
+                          placeholder="Сәлеметсіз бе!"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="cus-btn small-pad">Брондауға қою</button>
+                  <!-- Alert Message -->
+                  <div id="message" class="alert-msg"></div>
+                </form>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 ">
+              <div class="map mb-24">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19888.69155277525!2d-0.1326397216071882!3d51.45656928637526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604393204f5d1%3A0xd929bf8f7af6c791!2sBrixton%2C%20London%2C%20UK!5e0!3m2!1sen!2s!4v1698645259089!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="links-block">
+                <div class="our-links">
+                  <div class="address_detail">
+                    <div class="list">
+                      <p class="details"><img src="assets/media/icons/location.png" alt=""><span class="h5 m-0"> Астана қ. Қасым Аманжолов к-сі, 28/1  НП 3</span></p>
+                    </div>
+                    <div class="list"><a href="" class="details"><img src="assets/media/icons/mail.png" alt=""><span class="h5 m-0">admin@rashmed.kz</span></a>
+                    </div>
+                    <div class="list">
+                      <p class="details"><img src="assets/media/icons/telephone-2.png" alt=""><span class="h5 m-0">+7(705)6066-888</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Appointment Form End -->
+    </div>
+    <!-- Contact Us Banner Start -->
+    <section class="contact-us">
+      <div class="container">
+        <div class="row">
+          <div class="contact-banner">
+            <div class="text-area">
+              <h2 class="white">Бір қоңырау арқылы жедел желі<br> қызметін алыңыз.</h2>
+              <div class="d-flex align-items-center">
+                <a href="" class="h2 color-primary"><img src="assets/media/icons/telephone.png" alt="">+7(705)6066-888</a>
+              </div>
+              <h5 class="white mb-32">Біз сізге көмек көрсетуге дайынбыз 24/7</h5>
+              <a href="contact.html" class="cus-btn">Қоңырау шалыңыз</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us Banner End -->
+
+
+  </div>
+  <!-- Footer Start -->

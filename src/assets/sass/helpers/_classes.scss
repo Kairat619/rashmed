@@ -1,0 +1,97 @@
+// Colors
+.color-primary{
+    color: $accent-1 !important;
+}
+.color-sec{
+    color: $accent-2 !important;
+}
+.black{
+    color: $black !important;
+}
+.light-black{
+    color: $light-black !important;
+}
+.gray{
+    color: $gray !important;
+}
+.white{
+    color: $white !important;
+}
+.lightest-gray{
+    color: $medium-gray !important;
+}
+.light-gray{
+    color: $medium-gray !important;
+}
+.bg-primary{
+    background-color: $accent-1 !important;
+}
+.bg-sec{
+    background-color: $accent-2 !important;
+}
+.bg-black{
+    background-color: $black !important;
+}
+.bg-light-black{
+    background-color: $light-black !important;
+}
+.bg-gray{
+    background-color: $gray !important;
+}
+.bg-lightest-gray{
+    background-color: $medium-gray !important;
+}
+.bg-light-gray{
+    background-color: $medium-gray !important;
+}
+
+// Radius 
+.br-30{
+    border-radius: 30px;
+}
+.br-25{
+    border-radius: 25px;
+}
+.br-20{
+    border-radius: 20px;
+}
+.br-15{
+    border-radius: 15px;
+}
+.br-10{
+    border-radius: 10px;
+}
+.br-5{
+    border-radius: 5px;
+}
+// Box Shadow classes
+
+.shadow{
+    box-shadow: $shadow !important;
+}
+.shadow-2{
+    box-shadow: $shadow-2 !important;
+}
+
+// ------------- Font Weight -------------- //
+.fw-400{
+  font-weight: 400;
+}
+.fw-500{
+  font-weight: 500;
+}
+.fw-600{
+  font-weight: 600;
+}
+.fw-700{
+  font-weight: 700;
+}
+
+
+
+
+// Mix helper classes
+.b-unstyle{
+    border: 0;
+    background: transparent;
+}

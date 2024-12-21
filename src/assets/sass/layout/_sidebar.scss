@@ -1,0 +1,57 @@
+// Side-Bar Shop Listing
+.sidebar{
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(50px);
+    box-shadow: $shadow-2;
+    .filters{
+        form{
+            display: flex;
+            button{
+                position: absolute;
+                right: 0;
+            }
+        }
+        .filter-block{
+            border-bottom: 1px solid $white;
+            &.blog-side-bar{
+            }
+            .article{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+            .title{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .list{
+                li{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                
+            }
+            }
+    }
+}
+
+// Blog Siderbar
+.tags {
+    display: flex;
+    padding: 0px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+    .medics-tag{
+        background-color: transparent;
+        color: $accent-1;
+        border: 1px solid $accent-1;
+        border-radius: 5px;
+        padding: 8px 16px;
+    }
+    
+}

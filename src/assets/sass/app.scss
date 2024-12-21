@@ -1,0 +1,135 @@
+/*---------------------------------------------"
+// Template Name: Vision Vogue
+// Template URL: https://techpedia.co.uk/template/visionvogue
+// Description:  Vision Vogue - A Vision Vogue Html Template
+// Version: 1.0.0
+
+===============================================   
+STYLE SHEET INDEXING
+|
+|___ Fonts
+|___ Variables
+|___ Responsive
+|___ Reset Styles
+|___ Spacing
+|___ Helper Classes
+|___ Buttons
+|___ Headings
+|___ Layout Styles
+|___ END STYLE SHEET INDEXING
+
+--------------------------------------------*/
+
+/*-------------------------
+    Fonts
+-------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/*-------------------------
+    Variables
+-------------------------*/
+/* Fonts */
+$font-primary: 'Inter', sans-serif;
+$font-sec: 'Jost', sans-serif;
+$font-awesome: "Font Awesome 5 Pro";
+
+/* Colors */
+$accent-1:#4169E1;
+$accent-2:#9BB3FB;
+$accent-3:#E4EBFF;
+$accent-4:#9BB3FB;
+$black: #0B0C0D;
+$light-black:#212627;
+$gray:#7A7F85;
+$medium-gray:#9EA2A8;
+$white:#FFF;
+$white-sec: #F8F8FF;
+
+/* Transitions */
+$transition: all 0.5s ease;
+
+/* Gradients */
+
+/* Shadows */
+
+$shadow: 2px 1px 5px 0px rgba(0, 22, 86, 0.06), 8px 4px 9px 0px rgba(0, 22, 86, 0.05), 17px 9px 12px 0px rgba(0, 22, 86, 0.03), 31px 15px 14px 0px rgba(0, 22, 86, 0.01), 49px 24px 15px 0px rgba(0, 22, 86, 0.00);
+$shadow-2: 0px 0px 20px 0px rgba(0, 22, 86, 0.08);
+$shadow-3: 0px 0px 5px 0px rgba(0, 0, 0, 0.08);
+/*-------------------------
+    Reset Styles
+-------------------------*/
+@import "basic/basic";
+
+/*-------------------------
+Helpers
+-------------------------*/
+@import "helpers/classes";
+
+@import "helpers/mixin";
+
+@import "helpers/spacing";
+
+/*-------------------------
+Elements
+-------------------------*/
+@import "elements/preloader";
+
+@import "elements/buttons";
+
+@import "elements/form";
+
+/*-------------------------
+  layouts
+-------------------------*/
+@import "layout/header";
+
+@import "layout/footer";
+
+@import "layout/sidebar";
+
+@import "layout/hero-banner";
+
+@import "layout/benifits";
+
+@import "layout/bg-wrapper";
+
+@import "layout/cards";
+
+@import "layout/common";
+
+@import "layout/service-detail";
+
+@import "layout/our-value";
+
+@import "layout/faq";
+
+@import "layout/error";
+
+@import "layout/title-banner";
+
+@import "layout/coming-soon-banner";
+
+@import "layout/contact";
+
+@import "layout/blog"; 
+
+@import "layout/services";
+
+@import "layout/appointment";
+
+@import "layout/team";
+
+@import "layout/slider";
+
+@import "layout/team-detail";
+
+@import "layout/pagination";
+
+@import "layout/pricing";
+
+@import "layout/preloader";
+
+@import "layout/testimonials";
+
+@import "layout/blog-detail";

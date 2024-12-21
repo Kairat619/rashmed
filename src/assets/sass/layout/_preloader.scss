@@ -1,0 +1,79 @@
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: $white;
+    z-index: 9999999;
+    padding-top: 20%;
+    .eye {
+        width: 100px;
+        height: 60px;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .up {
+        position: absolute;
+        top: 0px;
+        height: 100px;
+        width: 100px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+        border-radius: 50%;
+        z-index: 1;
+      }
+      
+      .down {
+        position: absolute;
+        top: -70px;
+        height: 100px;
+        width: 100px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: transparent transparent black transparent;
+        border-radius: 50%;
+        z-index: 1;
+      }
+      
+      .mid {
+        position: absolute;
+        top: 1px;
+        left: 39px;
+        width: 27px;
+        height: 27px;
+        border: none;
+        border-radius: 50%;
+        background-color: black;
+        z-index: 0;
+        animation: eyemove 2s infinite;
+      }
+      
+      @keyframes eyemove {
+        0% {
+          left: 30px;
+          background-color: $accent-2;
+        }
+      
+        25% {
+          left: 36px;
+          background-color: $accent-1;
+        }
+        50% {
+          left: 43px;
+          background-color: $accent-1;
+        }
+      
+        75% {
+          left: 36px;
+          background-color: $accent-1;
+        }
+        100% {
+          left: 30px;
+          background-color: $accent-2;
+        }
+      }
+      
+      
+}

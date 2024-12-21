@@ -1,0 +1,67 @@
+// Blog Section
+.blog{
+    .blog_card{
+        position: relative;
+        
+        .blog_card_img_block{
+           .date{
+            padding: 8px 16px;
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.50);
+            box-shadow: $shadow-3;
+            backdrop-filter: blur(25px)
+           }
+        }
+        .blog_card_text_block{
+            position: absolute;
+            bottom: 0;
+            background: $white;
+            border-radius: 30px;
+            box-shadow: $shadow;
+            .author{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                img{
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .see_all_btn{
+        margin-top: 24px;
+        @include media-query(1399px){
+            margin-top: 36px;
+        }
+        @include media-query(1199px){
+            margin-top: 80px;
+        }
+        @include media-query(992px){
+            margin-top: 16px;
+        }
+    }
+}
+
+
+// ---------- Top Bar ---------- // 
+.top_bar {
+    .top_bar_area {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        .blog_search {
+            form {
+                display: flex;
+
+                button {
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

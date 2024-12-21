@@ -1,0 +1,14 @@
+.pricing{
+    .our_offer{
+        .advantages{
+            .advantage_text{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                i{
+                    color: $accent-1;
+                }
+            }
+        }
+    }
+}

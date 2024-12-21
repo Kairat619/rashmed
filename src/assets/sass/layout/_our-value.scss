@@ -1,0 +1,12 @@
+.values{
+    .value-card{
+        box-shadow: $shadow;
+        background: $white;
+        border-radius: 30px;
+        .image_title{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+    }
+}

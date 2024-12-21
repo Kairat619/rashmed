@@ -1,0 +1,282 @@
+--- 
+title: blog-detail
+layout: 'base.njk'
+---
+    <header class="header">
+      <div class="container">
+        <nav class="navbar upper d-flex">
+          <a class="navbar-brand d-lg-none" href="/">
+            <img alt="" src="/assets/media/brand-logo.png">
+          </a>
+          <a class="navbar-brand d-lg-block d-none" href="/"><img alt="" src="/assets/media/brand-logo.png"></a>
+          <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav mainmenu m-0">
+                <li class="menu-item ">
+                  <a href="/" >Басты Бет</a>
+                </li>
+                <li class="menu-item "> 
+                  <a href="/pages/about" >Біз туралы</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/services">Қызметтер</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/blogs" class="active">Блог</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/contact">Байланыс</a>
+                </li>
+              </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <i class="fal fa-bars"></i>
+            </button>
+          </nav>
+          <div class="right-content d-lg-flex d-none">
+            <a href="" class="color-primary">
+              <h6 class="fw-600 d-xl-block d-none"><i class="fal fa-phone-alt"></i> +7(705)6066-888</h6>
+            </a>
+            <ul class="unstyled">
+              <li><a href="/#appointment" class="cus-btn">
+                  <h6>Онлайн Брондау</h6>
+                </a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Header Area end -->
+    <div class="bg-wrapper-2">
+
+      <!-- Title-Banner Start -->
+      <div class="title-banner">
+        <div class="container">
+          <div class="row">
+            <h1 class="light-black">Blog Detail</h1>
+          </div>
+        </div>
+      </div>
+      <!-- Title-Banner End -->
+
+      <!-- Blog List With Sidebar || Start -->
+      <section class="blog-detail p-120">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-8 col-xl-8 col-lg-8">
+              <!-- Blog Bar Start -->
+              <div class="blog_info_bar p-24">
+                <div class="author">
+                  <img src="assets/media/users/blog-user_4.png" alt="">
+                  <div class="author-info">
+                    <p class="gray">Author:</p>
+                    <h6 class="light-black">{{ author }}</h6>
+                  </div>
+                </div>
+                <div class="author-info">
+                  <p class="gray">Published Date</p>
+                  <h6 class="light-black">{{ date | dateOnly  }} </h6>
+                </div>
+                <div class="author-info">
+                  <p class="gray">Category</p>
+                  <h6 class="light-black">{{ categories }}</h6>
+                </div>
+              </div>
+              <!-- Blog Bar End -->
+
+              <div class="tag-words mt-24 mb-24">
+                <h6 class="gray">{{ tags }}</h6>
+                
+              </div>
+
+              <h2 class="light-black mb-24">{{ title }}</h2>
+              <div class="row">
+                <div class="col-xl-6">
+                  <p class="gray mb-24">{{ paragraph1 }} </p>
+                  <p class="gray mb-xl-0 mb-24">{{ paragraph2 }}
+                  </p>
+                </div>
+                <div class="col-xl-6">
+                  <img src="/assets/media/blogs-detail/blog-img.png" alt="" class="article_detail-img br-30 shadow">
+                </div>
+                <p class="gray mt-24 mb-24">{{ paragraph3 }}</p>
+                <div class="row">
+                  <div class="col-lg-1">
+                    <img src="/assets/media/icons/qoutes-vr.png" alt="">
+                  </div>
+                  <div class="col-lg-10">
+                    <h5 class="light-black mt-32">{{ quotes }}</h5>
+                  </div>
+                  <div class="col-lg-1">
+                    <div class="qoute_img text-right mb-24">
+                      <img src="/assets/media/icons/qoutes-hr.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <p class="gray mb-24">
+                  {{ content | safe }} 
+                </p>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 mt-lg-0 mt-24">
+              <div class="sidebar p-24 br-30">
+                <div class="filters">
+                  <form action="blog-2.html" method="post" class="form-group mb-32">
+                    <input type="text" name="txt" id="text" placeholder="Search" class="form-control">
+                    <button type="submit" class="newsletter-btn">Search</button>
+                  </form>
+                  <div class="filter-block blog-side-bar mb-32">
+                    <div class="title mb-24">
+                      <h5 class="light-black">Categories</h5>
+                    </div>
+                    <div class="content-block">
+                      <ul class="unstyled list">
+                        <li class="mb-16">
+                          <div class="filter-checkbox">
+                            <a href="/pages/blogs" class="fw-500">Herbal</a>
+                          </div>
+                          <p class="light-black fw-500">({{ collections.all | countByCategory("herbal") }})</p>
+                        </li>
+                        <li class="mb-16">
+                          <div class="filter-checkbox">
+                            <a href="/pages/blogs" class="fw-500">Acupuncture </a>
+                          </div>
+                          <p class="light-black fw-500">({{ collections.all | countByCategory("acupuncture") }})</p>
+                        </li>
+                        <li class="mb-16">
+                          <div class="filter-checkbox">
+                            <a href="/pages/blogs" class="fw-500">Therapy </a>
+                          </div>
+                          <p class="light-black fw-500">({{ collections.all | countByCategory("therapy") }})</p>
+                        </li>
+                        <li class="">
+                          <div class="filter-checkbox">
+                            <a href="/pages/blogs" class="fw-500">Endocrinology </a>
+                          </div>
+                          <p class="light-black fw-500">({{ collections.all | countByCategory("endocrinology") }})</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-block blog-side-bar mb-32">
+                    <div class="title mb-24">
+                      <h5 class="light-black">Tags</h5>
+                    </div>
+                    <div class="content-block">
+                      <div class="tags">
+                        <div class="medics-tag">
+                          <p>Drugs</p>
+                        </div>
+                        <div class="medics-tag">
+                          <p>Philosophy</p>
+                        </div>
+                        <div class="medics-tag">
+                          <p>Mystery</p>
+                        </div>
+                        <div class="medics-tag">
+                          <p>Children's</p>
+                        </div>
+                        <div class="medics-tag">
+                          <p>Poetry</p>
+                        </div>
+                        <div class="medics-tag">
+                          <p>Science </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-block blog-side-bar">
+                    <div class="title mb-24">
+ 
+                      <h5 class="light-black">Popular Article</h5>
+                    </div>
+                    
+                    <div class="content-block">
+                      <div class="article mb-24">
+                        <div class="article-img">
+                          <a href="blog-detail.html"><img src="/assets/media/blog/blog-d-1.png" alt=""
+                              class="br-5 shadow"></a>
+                        </div>
+                        <div class="article-content">
+                          <p class="h6 fw-600 light-black m-0"><a href="blog-detail.html">The Impact of Stress on Your
+                              Health: Tips for...</a>
+                          </p>
+                          <a href="blog-detail.html" class="cus-btn-2">Read More</a>
+                        </div>
+                      </div>
+                      <div class="article mb-24">
+                        <div class="article-img">
+                          <a href="blog-detail.html"><img src="/assets/media/blog/blog-d-2.png" alt=""
+                              class="br-5 shadow"></a>
+                        </div>
+                        <div class="article-content">
+                          <p class="h6 fw-600 light-black m-0"><a href="blog-detail.html">Empowering Patients: Making
+                              Informed Health...</a></p>
+                          <a href="blog-detail.html" class="cus-btn-2">Read More</a>
+                        </div>
+                      </div>
+                      <div class="article">
+                        <div class="article-img">
+                          <a href="blog-detail.html"><img src="/assets/media/blog/blog-d-3.png" alt=""
+                              class="br-5 shadow"></a>
+                        </div>
+                        <div class="article-content">
+                          <p class="h6 fw-600 light-black m-0"><a href="blog-detail.html">Navigating the Healthcare
+                              System: Your Guide to...</a>
+                          </p>
+                          <a href="blog-detail.html" class="cus-btn-2">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Blog List With Sidebar || End -->
+
+      <!-- Blog Area Start -->
+      <section class="blog">
+        <div class="container">
+         
+          <h6 class="color-primary fw-600">Blogs</h6>
+          <h2 class="light-black mb-32">Related Blogs to the One <br> You Read!</h2>
+          <div class="row">
+         {% set filteredCollection = collections.all | filterByTags(["featured"]) %}
+              {%- for post in filteredCollection | reverse -%}
+           {% if loop.index0 < 3 %}
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 offset-md-0 offset-2">
+            <div class="blog_card mb-32">
+              <div class="blog_card_img_block">
+                <a href="{{ post.url }}" target="_blank"><img src="{{ post.data.image}}" alt="{{ post.data.alt }}" class="br-30"></a>
+                <p class="date h6 fw-600">{{post.data.date.toLocaleDateString()}}</p>
+              </div>
+              <div class="blog_card_text_block p-24">
+                <h5 class="mb-32"><a href="{{ post.url }}" target="_blank">{{ post.data.title }}</a></h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="author">
+                    <img src="/assets/media/users/blog-user_1.png" alt="">
+                    <h6 class="light-black fw-600">{{ post.data.author }}</h6>
+                  </div>
+                  <a href="{{ post.url }}" class="fw-600 color-primary" target="_blank">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+           {%- endif %}
+                 {%- endfor %}
+          </div>
+        </div>
+      </section>
+      <!-- Blog Area End -->
+    </div>
+
+
+
+  </div>
+  <!-- Footer Start -->
+  

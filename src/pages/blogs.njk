@@ -1,0 +1,150 @@
+--- 
+title: blogs
+layout: 'base.njk'
+pagination:
+    data: collections.post
+    size: 6
+    alias: posts
+---
+     <header class="header">
+      <div class="container">
+        <nav class="navbar upper d-flex">
+          <a class="navbar-brand d-lg-none" href="/">
+            <img alt="" src="/assets/media/brand-logo.png">
+          </a>
+          <a class="navbar-brand d-lg-block d-none" href="/"><img alt="" src="/assets/media/brand-logo.png"></a>
+          <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav mainmenu m-0">
+                <li class="menu-item ">
+                  <a href="/" >Басты Бет</a>
+                </li>
+                <li class="menu-item "> 
+                  <a href="/pages/about" >Біз туралы</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/services">Қызметтер</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/blogs" class="active">Блог</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="/pages/contact">Байланыс</a>
+                </li>
+              </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <i class="fal fa-bars"></i>
+            </button>
+          </nav>
+          <div class="right-content d-lg-flex d-none">
+            <a href="" class="color-primary">
+              <h6 class="fw-600 d-xl-block d-none"><i class="fal fa-phone-alt"></i> +7(705)6066-888</h6>
+            </a>
+            <ul class="unstyled">
+              <li><a href="/#appointment" class="cus-btn">
+                  <h6>Онлайн Брондау</h6>
+                </a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Header Area end -->
+    <div class="bg-wrapper-2">
+
+    <!-- Title-Banner Start -->
+    <div class="title-banner">
+        <div class="container">
+            <div class="row">
+            <h1 class="light-black">Жаңалықтар</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Title-Banner End -->
+
+    <!-- Top Bar Start -->
+    <div class="top_bar pt-120 mb-48 mt-xl-0">
+      <div class="container">
+        <div class="row">
+          <div class="top_bar_area d-md-flex d-block">
+            <p class="gray d-lg-block d-none">Showing 1-9 of 50 results</p>
+            <div class="blog_search">
+              <form action="blogs.html" method="post" class="form-group">
+                <input type="text" name="search" id="srch" placeholder="Search" class="form-control blog-search">
+                <button type="submit" class="newsletter-btn">Search</button>
+              </form>
+            </div>
+            <div class="filter_row mt-md-0 mt-24">
+              <div class="left_block">
+                <div class="select_filter">
+                  <span class="dark-gray">Short by:</span>
+                  <select name="select" class="has-nice-select">
+                    <option value="1">Newest</option>
+                    <option value="2">Oldest</option>
+                    <option value="3">Popular</option>
+                    <option value="4">A-Z</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top Bar End -->
+    
+    <!-- Blog Area Start -->
+    <section class="blog">
+      <div class="container">
+        <div class="row">
+     {%- for post in collections.post | reverse -%}
+           {% if loop.index0 < 9 %}
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-8 offset-md-0 offset-2">
+            <div class="blog_card mb-32">
+              <div class="blog_card_img_block">
+                <a href="{{ post.url }}" target="_blank"><img src="{{ post.data.image}}" alt="{{ post.data.alt }}" class="br-30"></a>
+                <p class="date h6 fw-600">{{post.data.date.toLocaleDateString()}}</p>
+              </div>
+              <div class="blog_card_text_block p-24">
+                <h5 class="mb-32"><a href="{{ post.url }}">{{ post.data.title }}</a></h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="author">
+                    <img src="/assets/media/users/blog-user_1.png" alt="">
+                    <h6 class="light-black fw-600">{{ post.data.author }}</h6>
+                  </div>
+                  <a href="/pages/blogs" class="fw-600 color-primary" target="_blank">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+           {%- endif %}
+                 {%- endfor %}
+          
+          
+          
+          
+          
+          <div class="paginations mt-24">
+            <ul class="unstyled">
+              <li class="arrow"><a href="" class="h4 fw-600 mb-0"><i class="far fa-chevron-left"></i></a></li>
+              <li class="active"><a href="" class="h6 fw-600 mb-0">1</a></li>
+              <li><a href="" class="h6 fw-600 mb-0">2</a></li>
+              <li><a href="" class="h6 fw-600 mb-0">3</a></li>
+              <li class="arrow"><a href="" class="h4 fw-600 mb-0"><i class="far fa-chevron-right"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Area End -->
+    
+    </div>
+
+    
+  
+  </div>
+    <!-- Footer Start -->
+ 

@@ -1,0 +1,38 @@
+.bg-wrapper{
+    background: url('../media/backgrounds/blue-background.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    &.about-us{
+        background: url('../media/backgrounds/blue-background-2.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    &.service-detail{
+        background-position: inherit;
+    }
+}
+.bg-wrapper-2{
+    background: url('../media/banner/bg-light-3.png');
+    background-repeat: no-repeat;
+    // background-position: right;
+}
+.bg-wrapper-3{
+    background: url('../media/backgrounds/blue-background-3.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    &.v-2{
+    background: url('../media/backgrounds/blue-background-4.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    }
+    &.v-3{
+    background: url('../media/backgrounds/blue-background-5.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    }
+    // &.v-4{
+    // background: url('../media/backgrounds/blue-background-6.png');
+    // background-repeat: no-repeat;
+    // // background-position: bottom;
+    // }
+}
